@@ -14,8 +14,8 @@
 <body>
 
     <div id="app">
-        <div id="carouselExampleCaptions" class="carousel slide rounded-4 overflow-hidden mt-5"
-            @mouseover="startStopButton" @mouseleave="startStopButton">
+        <div id="carouselExampleCaptions" class="carousel slide rounded-4 overflow-hidden mt-5" @mouseover="stopOver"
+            @mouseleave="startLeave">
             <div class="carousel-inner">
                 <div class="carousel-item active">
                     <img :src="characters[currentImage].path" class="d-block w-100" alt="carousel-image">

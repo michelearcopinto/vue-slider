@@ -85,6 +85,21 @@ const app = createApp({
 
                 console.log('intervallo ripreso')
             }
+        },
+        stopOver() {
+
+            clearInterval(this.intervalScroll);
+            this.intervalScroll = null;
+            console.log(this.intervalScroll)
+
+            console.log('intervallo terminato')
+
+        },
+        startLeave() {
+
+            this.autoScroll();
+
+            console.log('intervallo ripreso')
         }
     }
 }).mount('#app')
