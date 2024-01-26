@@ -1,0 +1,57 @@
+body {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+#app>div {
+    max-width: 1205px;
+    margin-inline: auto;
+}
+
+
+.carousel-control-prev,
+.carousel-control-next {
+    opacity: 100%;
+}
+
+.carousel-caption {
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+#bottomImages {
+    border: 2px solid white;
+}
+
+.thumbnail {
+    width: 25%;
+    height: 250px;
+    background-position: center;
+    background-size: cover;
+    border: 1px solid white;
+    transition: all 0.7s;
+}
+
+.thumbnail:hover {
+    opacity: 50%;
+    cursor: pointer;
+}
+
+.selected {
+    opacity: 50%;
+}
+
+#bottomImages div:nth-child(5) {
+    background-position: 0%;
+}
+
+#bottomImages div:nth-child(3) {
+    background-position: 100%;
+}
+
+#bottomImages div:first-child {
+    background-position: 60%;
+}
